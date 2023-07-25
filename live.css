@@ -1,0 +1,151 @@
+.space{
+  height: 80px;
+  width: 1280px;
+  color: white;
+}
+/* title區 */
+.title{
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  height: 100px;
+  left: 80px;
+}
+.title h2{
+  position: absolute;
+  left: 1.7%;
+  top: 30%;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #fff;
+}
+.title img{
+  width: 130px;
+  height: 70px;
+}
+
+/* 流程區 */
+main{
+  width: 1200px;
+  margin: auto;
+  /* background-color: aqua; */
+}
+
+main section{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: 50px;
+}
+main section > div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: #fa0; */
+}
+section .txt{
+  width: 400px;
+  height: 150px;
+  background-color: #fff;
+  border-top: 5px solid antiquewhite;
+  border-bottom: 5px solid antiquewhite;
+  position: relative;
+  left: 47px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+
+
+}
+section .outside{
+  width: 130px;
+  height: 130px;
+  border: 5px solid antiquewhite;
+  padding: 20px; 
+  transform: rotate(45deg);
+  margin-right: 10px;
+
+ }
+ main .outside::after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 80px solid antiquewhite;
+  border-left: 80px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+} 
+section .square{
+  width: 80px;
+  height: 80px;
+  background-color: antiquewhite;
+  box-shadow: 0px 0px 0px 2px white;
+  position: relative;
+  z-index: 1;
+}
+section .square span{
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 16px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(-45deg);
+}
+
+section img{
+  display: block; 
+  width: 130px;
+  text-align: center;
+}
+main section:nth-child(even){
+  flex-direction: row-reverse;
+}
+main section:nth-child(even) > div{
+  flex-direction: row-reverse;
+}
+main section:nth-child(even) .outside{
+  margin-left: 30px;
+  margin-right: 0;
+}
+main section:nth-child(even) .txt{
+  left: -47px;
+  justify-content: flex-end;
+}
+
+main section:nth-child(2) .txt{
+  border-top: 5px solid #afe;
+  border-bottom: 5px solid #aef;
+}
+main section:nth-child(2) .square{
+  background-color: #afe;
+}
+main section:nth-child(2) .outside{
+  border: 5px solid #afe;
+}
+main section:nth-child(2) .outside::after{
+  border-top: 80px solid #afe;
+  
+}
+
+main section:nth-child(4) .txt{
+  border-top: 5px solid #aef;
+  border-bottom: 5px solid #aef;
+}
+main section:nth-child(4) .square{
+  background-color: #aef;
+}
+main section:nth-child(4) .outside{
+  border: 5px solid #aef;
+}
+main section:nth-child(4) .outside::after{
+  border-top: 80px solid #aef;
+  
+}
+

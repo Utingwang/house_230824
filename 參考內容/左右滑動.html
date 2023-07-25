@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     .demo1 {
+    height: 92px;
+    width: 97px;
+    /* //指定可滑动区域宽度 */
+    overflow: hidden; 
+    /* //超出隐藏 */
+    white-space: nowrap;
+    /* //超出不换行 */
+    overflow-x: auto;
+    /* //出现水平滚动条 */
+    margin: 30px;
+    /* //无关紧要的代码 */}
+    div {
+      display: inline-block;
+      border: 1px solid rosybrown;
+    }
+
+    .box { 
+    background : #eee ; 
+    padding : 10px 0 ; 
+    white-space : nowrap ; /*文本不會換行，文本會在在同一行上繼續*/ 
+    overflow-y : auto ; /*可滑動*/
+}
+/*自定義滾動條的偽對象選擇器, CSS 可以隱藏滾動條*/ 
+.box::-webkit-scrollbar { 
+    display : none ;
+} 
+.box1 { 
+    width : 49% ; 
+    margin-left : 3% ; 
+    height : 100px ; 
+    background : #fff ; 
+    display : inline-block ; /*行內塊元素*/ 
+}
+
+.div { 
+    overflow : hidden ; 
+    height : 118px ;
+} 
+.box { 
+    background : #eee ; 
+    padding : 10px 0 ; 
+    white-space : nowrap ; /*文本不會換行，文本會在在同一行上繼續*/ 
+    overflow-y : auto ; /*可滑動*/
+}
+/*自定義滾動條的偽對象選擇器, CSS 可以隱藏滾動條*/ 
+/* .box::-webkit-scrollbar{
+    display: none;
+} */ 
+.box1 { 
+    width : 49% ; 
+    margin-left : 3% ; 
+    height : 100px ; 
+    background : #fff ; 
+    display : inline-block ; /*行內塊元素*/ 
+}
+  </style>
+</head>
+<body>
+  <div class="demo1">
+    <div>语文</div>
+    <div>数学</div>
+    <div>音乐</div>
+    <div>历史</div>
+    <div>地理</div>
+    <div>政治</div>
+  </div>
+
+  <div class ="box" > 
+    <div class ="box1" ></div > 
+    <div class ="box1" ></div > 
+    <div class ="box1" ></div > 
+    <div class ="box1" ></div > 
+    <div class ="box1" ></div > 
+</div >
+
+<!--外部嵌套層--> 
+<div class ="div" > 
+  <div class ="box" > 
+      <div class ="box1" ></div> 
+      <div class ="box1" ></div> 
+      <div class ="box1" ></div> 
+      <div class ="box1" ></div> 
+      <div class ="box1" ></div<ai=47>>
+    </div > 
+</div>
+</body>
+</html>

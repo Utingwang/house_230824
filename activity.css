@@ -1,0 +1,118 @@
+
+  /* title區 */
+  .title{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    height: 100px;
+    left: 0px;
+    top: 100px;
+  }
+  .title h2{
+    position: absolute;
+    left: 1.7%;
+    top: 30%;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #fff;
+  }
+  .title img{
+    width: 130px;
+    height: 70px;
+
+}
+
+  main{
+    width: 1200px;
+    margin: 20px auto;
+}
+  /* 活動快照 */
+.photo{
+  position: relative; 
+  top: 100px;
+}
+
+.photo div{
+    width: 893px;
+    height: 413px;
+    background-color: #ccc;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.photo::after{
+    content: '';
+    width: 300px;
+    height: 590px;
+    background-color: black;
+    clip-path:  polygon(100% 0, 70% 80%, 100% 70%); 
+    position: absolute;
+    left: -12.2%;
+    top: 0;
+
+   
+}
+
+.photo::before{
+  content: '';
+  width: 300px;
+  height: 590px;
+  background-color: black;
+  clip-path:  polygon(100% 0, 70% 80%, 100% 70%); 
+  position: absolute;
+  transform: rotateY(180deg);
+  right: -12.2%;
+  top: 0; 
+}
+
+  
+
+
+  /* 天數 */
+  .news{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    margin-top: 120px;
+  }
+  .news .day div{
+    width: 400px;
+  }
+  .news .day img{
+    width: 100%;
+    vertical-align: top;
+  }
+.news .calendar{
+  width: 757px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.news .item{
+  width: 90px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 4px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20%;
+  background:linear-gradient(
+    to bottom,
+      #0af 0%,
+      #0af 30%,
+      #fff 30%,
+      #fff 100%);
+}
+.news .item div + div{
+font-size: 50px;
+line-height: 70px;
+}
+.news .item span{
+  display: inline-block;
+  margin-left: 1px;
+  font-size: 16px;
+}
+.news .item32,.news .item33,.news .item34,.news .item35,.news .item36,.news .item37{
+  visibility: hidden;
+
+}

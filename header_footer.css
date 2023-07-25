@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+header{
+width: auto;
+}
+ .header-fixed{
+  width: 1200px;
+  margin: auto;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.logo{
+  width: 241px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.house{
+  width: 113px;
+  margin-left: auto;
+}
+.house img{
+  width: 100%;
+}
+ 
+.header-fixed .link a{
+  margin-left: 20px;
+}
+
+/* footer */
+footer{
+  width: 1200px;
+  background-color: #00406C;
+  margin: auto;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+/* logo時間 */
+footer .logo{
+  width: 241px;
+}
+footer .logo img{
+  width: 100%;
+  vertical-align: top;
+  margin: 50px auto;
+}
+footer .social{
+  width: 241px;
+  padding: 0 10px;
+
+}
+.footer .social a{
+  display: inline-block;
+  margin-right: 30.5px;
+}
+
+/* 參訪時間 */
+.footer h4{
+  font-size: 20px;
+  display: inline-block;
+  margin: 50px auto;
+  color: #fff;
+}
+.footer p{
+  margin-bottom: 50px;
+  color: #fff;
+}
+.footer .time a{
+  background-color: #CDFF64;
+  display: inline-block;
+  border-radius: 22px;
+  padding: 5.71px 24.5px;
+}
+
+/* 地址 */
+/* .adr img{
+
+} */
+
+.footer span{
+  letter-spacing: .5em;
+  line-height: 30px;
+}

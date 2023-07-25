@@ -1,0 +1,144 @@
+
+.space{
+    color: white;
+    height: 80px;
+    width: 1200px;
+    margin: auto;
+}
+
+/* 環境 */
+main{
+
+    width: 1200px;
+    margin: auto;
+}
+.enviro{
+    position: relative;
+    margin-top: 50px;
+    z-index: 1; 
+
+    font-size: 0;
+}
+.enviro >  .card {
+    font-size: 16px;
+    width: 380px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card img{
+    width: 380px;
+}
+
+.card p{
+    width: 280px; 
+    margin: auto;
+    text-align: left;
+    line-height: 32px;
+}
+.enviro .card:first-child{
+    vertical-align: top;
+}
+.enviro .card:first-child .pic{
+    height: 437px;
+}
+
+.enviro .card:nth-child(2) h2{
+     height: 200px; 
+     font-size: 24px;
+     font-weight: bolder;
+     text-align: center;
+}
+.enviro .card:nth-child(3) {
+    position: absolute;
+    width: 380px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+/* 多種房型 */
+.house_type{
+    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    top: -100px;
+}
+.house_type div:first-child{
+    width: 320px;
+    margin: auto;
+}
+.house_type h3{
+    display: block;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 10%;
+}
+.house_type p{
+    font-size: 16px;
+    line-height: 32px;
+
+}
+.house_type div:last-child{
+    font-size: 0;
+    display: inline-block;
+    width: 628px;
+    margin-right: 45px;
+
+}
+.house_type div:last-child img{
+    display: inline-block;
+    border: 5px solid black;
+    width: 304px;
+    height: 245px;
+    margin-right: 10px;
+}
+.house_type img.one_bed{
+    margin-top: -10%;
+    margin-left: 25%;
+}
+
+/* 專業器材與人才 */
+.major{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1200px;
+    margin-bottom: 50px;
+}
+.major div:first-child{
+    width:  243px;
+    margin-left: 100px;
+    padding-top: 0;
+    
+}
+.major img{
+    width: 100%;
+}
+
+.major div:nth-child(2){
+width: 372px;
+margin: 0 50px;
+}
+
+.major div:nth-child(2) h3{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
+.major div:nth-child(2) p{
+    width: 317px;
+    line-height: 32px;
+    margin: 30px auto;
+
+}
+.major div:last-child{
+    width: 362px;
+}
+
+

@@ -1,0 +1,88 @@
+.anime{
+  border: 1px solid red;
+  position: relative;
+  height:300px;
+  width: 300px;
+  margin: auto;
+  margin-top:20px;
+}
+ 
+.anime h3{
+  text-align: center;
+  font-size:28px;
+}
+ 
+.anime a{
+  border: 1px solid #0f0;
+  position: absolute;
+  display: block;
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* text-align: center; */
+  opacity: 0;
+  /*動畫全長時間設定*/
+  /* -webkit-animation: slider 20s linear infinite; */
+  animation: slider 20s linear infinite;
+}
+  img{
+    margin: auto;
+    display:block;
+    vertical-align: bottom;
+  }
+ 
+/*動畫關鍵影格, slider動畫名字*/
+  @keyframes slider {
+    2.5% {
+      opacity: 1;
+      
+    }
+    17.5% {
+    opacity: 1;
+    
+    }
+    20% {
+    opacity: 0;
+       }
+  }
+  /* @keyframes slider {
+    2.5% {
+      opacity: 1;
+      
+    }
+    17.5% {
+    opacity: 1;
+    
+    }
+    20% {
+    opacity: 0;
+       }
+  } */
+ 
+/*每個圖片相隔4秒*/
+  .anime a:nth-child(1) {
+    animation-delay: 0s;
+  }
+ 
+  .anime a:nth-child(2) {
+    animation-delay: 4s;
+  }
+ 
+  .anime a:nth-child(3) {
+    animation-delay: 8s;
+  }
+ 
+  .anime a:nth-child(4) {
+
+    animation-delay: 12s;
+  }
+ 
+  .anime a:nth-child(5) {
+    animation-delay: 16s;
+  }
+ 
+/*當滑鼠移動到圖片的區塊時，動畫暫停*/
+  .anime a:hover{
+  animation-play-state: paused;
+  }

@@ -1,0 +1,239 @@
+/* 輪輪播背景圖 */
+.header_main{
+  width: 1200px;
+  margin: 0 auto;
+}  
+.header_main .txt{
+  background-color: #fff;
+  width: 417px;
+  height: 255px;
+  position: relative;
+  top: 180px;
+  left:50px;
+  z-index: 1;
+  text-align: center;
+  padding: 27.4px;
+}
+.header_main h2{
+  font-size: 24px;
+  margin: 27.4px;
+}
+.header_main p {
+  line-height: 32px;
+  font-size: 18px;
+  margin: 27.4px;
+}
+.header_main a{
+  display: inline-block;
+  background-color: rgb(74, 242, 121);
+  font-size: 16px;
+  width: 113px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 22px;
+
+}
+.background{
+  width: 1200px;
+  margin: auto;
+  position: absolute;
+  top: 80px;
+  animation: go 12s linear infinite ;
+  opacity: 0;
+}
+.background img{
+  width: 100%;
+}
+@keyframes go {
+  0%{ opacity: 1;}
+  33%{ opacity: 1;}
+  33.33333333%{ opacity: 0;}
+}
+.abb{
+  animation-delay: 8s
+}
+.app{
+  animation-delay: 4s
+} 
+.background :last-child{
+  animation-delay: 0s
+}
+.space{
+height: 400px;
+}
+/* 主內文 */
+main{
+  width: 1200px;
+  margin: auto;
+}
+/* 宗旨 */
+
+.purpose .tit{
+  text-align: center;
+  position: relative;
+
+}
+.purpose img{
+  display: block;
+  margin: auto;
+  width: 191px;
+}
+.purpose h1{
+  position: absolute;
+  width: 121px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 24px;
+}
+
+.purpose .txt{
+  width: 659px;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 18px 0;
+  line-height: 32px;
+}
+
+/* 線區 */
+.line{
+  position: relative;
+}
+.line > img{
+  width: 1200px;
+  position: absolute;
+  top: 50px;
+
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.card .photo{
+  vertical-align: top;
+  width: 650px;
+}
+.card img{
+  width: 100%;
+}
+/* 文字區 */
+.card .txt{
+
+  width: 300px;
+
+}
+.card h2{
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.card p{
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  
+}
+
+.card a{
+  padding:7px 24.5px;
+  background-color: #4AF279;
+  border-radius: 22px;
+}
+
+/* people */
+.line .people{
+  flex-direction: row-reverse;
+}
+.line .people .txt{
+  margin-left: 200px;
+}
+
+/* thing */
+.line .thing{
+  margin-right: 200px;
+
+}
+
+/* 志工聯絡 */
+
+.item{
+  width: 1200px;
+  padding: 50px;
+  margin: auto;
+  background-color: rgba(50,100,135,50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 0;
+  align-items: center;
+}
+.item div{
+  padding: 25px;
+  border: 2px solid white;
+  width: 216px;
+  height: 158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.item img{
+  width: 60px;
+}
+.item h3{
+  color: #fff;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.item p{
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.tree{
+  width: 1200px;
+  margin: auto;
+  padding: 30px 50px;
+  background-color: rgba(50,100,135,50%);
+}
+
+.tree div{
+  position: relative;
+}
+.tree div img{
+  width: 94px;
+  position: absolute;
+  bottom: -30px;
+}
+
+.tree div img:nth-child(2){
+  right: 71%;
+}
+.tree div img:nth-child(3){
+  right: 46.5%;
+}
+.tree div img:nth-child(4){
+  right: 22%;
+}
+.tree div img:nth-child(5){
+  left: 93%;
+}
+
+
+
+
+
+
+
+
+
+
