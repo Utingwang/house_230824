@@ -16,7 +16,6 @@ main{
     position: relative;
     margin-top: 50px;
     z-index: 1; 
-
     font-size: 0;
 }
 .enviro >  .card {
@@ -45,18 +44,18 @@ main{
 }
 
 .enviro .card:nth-child(2) h2{
-     height: 200px; 
+     height: 100px; 
      font-size: 24px;
      font-weight: bolder;
      text-align: center;
 }
-.enviro .card:nth-child(3) {
+
+.enviro .card:nth-child(3){
     position: absolute;
     width: 380px;
-    top: 50%;
-    transform: translateY(-50%);
-} 
-
+    bottom: 40%;
+    
+}
 /* 多種房型 */
 .house_type{
     background-color: #ccc;
