@@ -45,7 +45,7 @@ main section > div{
   /* background-color: #fa0; */
 }
 section .txt{
-  width: 400px;
+  width: 500px;
   height: 150px;
   background-color: #fff;
   border-top: 5px solid antiquewhite;
@@ -123,6 +123,13 @@ main section:nth-child(2) .txt{
   border-top: 5px solid #afe;
   border-bottom: 5px solid #aef;
 }
+main section:nth-child(2) img{
+  width: 150px;
+}
+
+main section:nth-child(3) img{
+  width: 110px;
+}
 main section:nth-child(2) .square{
   background-color: #afe;
 }
@@ -137,6 +144,9 @@ main section:nth-child(2) .outside::after{
 main section:nth-child(4) .txt{
   border-top: 5px solid #aef;
   border-bottom: 5px solid #aef;
+}
+main section:nth-child(4) .img{
+  width: 150px;
 }
 main section:nth-child(4) .square{
   background-color: #aef;

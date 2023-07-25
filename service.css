@@ -85,10 +85,11 @@ width: auto;
   padding-top: 12px;
   padding-left: 60px;
   line-height: 32px;
+  font-size: 20px;
 
 }
 .project .pic{
-  width: 469px;
+  width: 400px;
 }
 .project img{
   width: 100%;
@@ -174,7 +175,28 @@ text-align: center;
   font-size: 16px;
   text-align: left;
 }
+/* 萬用titile */
+.title{
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+}
+.title h2{
+  position: absolute;
+  left: 1.7%;
+  top: 30%;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #fff;
+}
+.title img{
+  width: 130px;
+  height: 70px;
 
+}
 /* 客人心得 */
 .experience{
   width: 1200px;
@@ -195,8 +217,8 @@ text-align: center;
 .experience li{
   display: inline-block;
   margin: 20px 20px;
-  width: 239px;
-  height: 244px;
+  width: 220px;
+  height: 220px;
   padding: 30px;
   
 }
