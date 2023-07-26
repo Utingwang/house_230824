@@ -1,3 +1,6 @@
+*{
+  font-family: "Noto Sans Tc";
+}
 /* 輪輪播背景圖 */
 .header_main{
   width: 1200px;
@@ -16,23 +19,31 @@
 }
 .header_main h2{
   font-size: 24px;
+  font-weight: bolder;
   margin: 27.4px;
 }
 .header_main p {
   line-height: 32px;
-  font-size: 18px;
+  font-size: 16px;
   margin: 27.4px;
 }
 .header_main a{
   display: inline-block;
-  background-color: rgb(74, 242, 121);
+  background-color: #44D212;
   font-size: 16px;
   width: 113px;
   height: 30px;
   line-height: 30px;
   border-radius: 22px;
-
 }
+.header_main a:hover{
+  color: #44D212;
+  border: 1px solid #44D212;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+
 .background{
   width: 1200px;
   margin: auto;
@@ -68,64 +79,97 @@ main{
 }
 /* 宗旨 */
 
-.purpose .tit{
-  text-align: center;
+.purpose .backgroundImg{
+  width: 1000px;
+  /* background-color: aqua; */
   position: relative;
-
+  margin: auto;
 }
 .purpose img{
-  display: block;
-  margin: auto;
-  width: 191px;
-}
-.purpose h1{
-  position: absolute;
-  width: 121px;
-  height: 24px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  font-size: 24px;
+  width: 100%;
 }
 
-.purpose .txt{
+.purpose .important div{
+font-size: 30px;
+background-color: #44D212;
+writing-mode: vertical-lr;
+text-align: center;
+padding: 10px;
+}
+
+.purpose .important{
   width: 659px;
   text-align: center;
   margin: 50px auto;
   font-size: 18px 0;
   line-height: 32px;
+  letter-spacing: 1px;
 }
-
-/* 線區 */
-.line{
-  position: relative;
-}
-.line > img{
-  width: 1200px;
+.purpose .important div:first-child{
   position: absolute;
-  top: 50px;
+  right: 46%;
+  top: 14%;
+}
+.purpose .important div:nth-child(2){
+  position: absolute;
+  right: 40%;
+  top: 8%;
+}
+.purpose .important div:nth-child(3){
+  position: absolute;
+  right: 34%;
+  top: 2%;
+}
+.purpose .text{
+  width: 300px;
+  line-height: 32px;
+  position: absolute;
+  z-index: 1;
+  top:10%;
+  right: 0;
+  text-align: left;
+}
+.purpose .text p{
+  width: 300px;
+  margin-bottom: 32px;
+}
+.purpose .text :nth-child(2){
+  width: 280px;
+  margin-bottom: 32px;
+}
+.purpose .text :nth-child(3){
+  width: 260px;
+}
 
+
+/* 三欄圖文區 */
+.introduce{
+  width: 1200px;
+  margin: auto;
 }
 .card{
+  margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 150px;
 }
-.card .photo{
-  vertical-align: top;
-  width: 650px;
+.introduce .photo{
+  width: 600px;
+  
 }
-.card img{
+.introduce .photo img{
   width: 100%;
+  border-radius: 42px;
 }
-/* 文字區 */
-.card .txt{
 
-  width: 300px;
+/* 文字區 */
+.introduce .txt{
+  width: 350px;
+  padding: 30px 50px;
+  border: 10px solid  rgb(37, 54, 66);
+  border-left: none;
+  border-radius: 42px;
 
 }
 .card h2{
@@ -138,40 +182,41 @@ main{
   font-size: 16px;
   line-height: 32px;
   margin-bottom: 30px;
-  
 }
 
 .card a{
   padding:7px 24.5px;
-  background-color: #4AF279;
+  background-color: #44D212;
   border-radius: 22px;
+}
+.card a:hover{
+  color: #44D212;
+  border: 1px solid #44D212;
+  background-color: #fff;
+  font-weight: bold;
 }
 
 /* people */
-.line .people{
+.introduce :nth-child(2){
   flex-direction: row-reverse;
 }
-.line .people .txt{
-  margin-left: 200px;
+.introduce .people{
+  border-left: 10px solid rgb(37, 54, 66);
+  border-right: none;
 }
 
-/* thing */
-.line .thing{
-  margin-right: 200px;
 
-}
 
 /* 志工聯絡 */
 
 .item{
   width: 1200px;
-  padding: 50px;
+  padding: 30px;
   margin: auto;
   background-color: rgba(50,100,135,50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-bottom: 0;
   align-items: center;
 }
 .item div{
@@ -184,49 +229,44 @@ main{
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
-.item img{
-  width: 60px;
+.item div:hover{
+  background-color:#fff;
+  border: 2px solid #44D212;
+} 
+
+.item div i{
+  color: #fff;
+  font-size: 40px;
 }
+
+.item div:hover i{
+  color: #44D212;
+}
+
 .item h3{
   color: #fff;
   line-height: 32px;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 20px;
 }
+.item div:hover h3{
+  color: #44D212;
+}
+
 .item p{
   color: #fff;
   font-size: 16px;
   line-height: 24px;
+  font-weight: bold;
 }
-.tree{
-  width: 1200px;
-  margin: auto;
-  padding: 30px 50px;
-  background-color: rgba(50,100,135,50%);
+.item div:hover p{
+  color: #44D212;
 }
 
-.tree div{
-  position: relative;
-}
-.tree div img{
-  width: 94px;
-  position: absolute;
-  bottom: -30px;
-}
 
-.tree div img:nth-child(2){
-  right: 71%;
-}
-.tree div img:nth-child(3){
-  right: 46.5%;
-}
-.tree div img:nth-child(4){
-  right: 22%;
-}
-.tree div img:nth-child(5){
-  left: 93%;
-}
+
 
 
 

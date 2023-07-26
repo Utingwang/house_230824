@@ -6,7 +6,7 @@ a{
   text-decoration: none;
 }
 header{
-width: auto;
+  width: auto;
 }
  .header-fixed{
   width: 1200px;
@@ -22,25 +22,26 @@ width: auto;
   right: 0;
   top: 0;
   z-index: 2;
+  font-size: 0;
 }
 .logo{
   width: 241px;
 }
-
 .logo img{
-  width: 100%;
-}
-
-.house{
-  width: 113px;
-  margin-left: auto;
-}
-.house img{
   width: 100%;
 }
  
 .header-fixed .link a{
-  margin-left: 20px;
+  display: inline-block;
+  height: 80px;;
+  padding: 10px;
+}
+.header-fixed .link div{
+  font-size: 16px;
+  line-height: 60px;
+}
+.header-fixed .link a:hover{
+  background-color: #44D212;
 }
 
 /* footer */
@@ -86,18 +87,34 @@ footer .social{
   color: #fff;
 }
 .footer .time a{
-  background-color: #CDFF64;
+  background-color: #44D212;
   display: inline-block;
   border-radius: 22px;
   padding: 5.71px 24.5px;
 }
+.footer .time a:hover{
+  color: #44D212;
+  border: 1px solid #44D212;
+  background-color: #fff;
+  font-weight: bold;
+}
 
-/* 地址 */
-/* .adr img{
-
-} */
 
 .footer span{
-  letter-spacing: .5em;
+  letter-spacing: .3em;
   line-height: 30px;
+}
+
+.footer i{
+  color: white;
+  font-size: 40px;
+}
+.footer i:hover{
+  color: #44D212;
+}
+.fa{
+  display: block;
+  color: #fff;
+  text-align: center;
+
 }
