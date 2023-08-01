@@ -48,73 +48,89 @@ header{
 footer{
   width: 1200px;
   background-color: #00406C;
-  margin: auto;
+  margin:auto;
 }
 .footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
+  padding: 50px;
 }
-/* logo時間 */
+/* logo */
 footer .logo{
-  width: 241px;
+  /* width: 241px; */
+  width: 100%;
 }
 footer .logo img{
   width: 100%;
   vertical-align: top;
-  margin: 50px auto;
+  margin-top: -10px;
 }
 footer .social{
-  width: 241px;
-  padding: 0 10px;
-
+  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.footer .social a{
-  display: inline-block;
-  margin-right: 30.5px;
-}
-
-/* 參訪時間 */
-.footer h4{
-  font-size: 20px;
-  display: inline-block;
-  margin: 50px auto;
-  color: #fff;
-}
-.footer p{
-  margin-bottom: 50px;
-  color: #fff;
-}
-.footer .time a{
-  background-color: #44D212;
-  display: inline-block;
-  border-radius: 22px;
-  padding: 5.71px 24.5px;
-}
-.footer .time a:hover{
-  color: #44D212;
-  border: 1px solid #44D212;
-  background-color: #fff;
-  font-weight: bold;
-}
-
-
-.footer span{
-  letter-spacing: .3em;
-  line-height: 30px;
-}
-
-.footer i{
+footer .social i{
+  width: 100%;
+  vertical-align: top;
   color: white;
   font-size: 40px;
 }
 .footer i:hover{
-  color: #44D212;
+  color: #00406C;
+  background-color: #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
+
+/* 參訪時間 */
+.footer h6{
+  font-size: 20px;
+  display: inline-block;
+  color: #fff;
+}
+.footer p{
+  margin: 40px auto;
+  color: #fff;
+}
+.footer .time a{
+  background-color: #fff;
+  border: 1px solid #00406C;
+  display: inline-block;
+  border-radius: 22px;
+  padding: 5px 10px;
+}
+.footer .time a:hover{
+  background-color: #00406C;
+  border: 1px solid #00406C;
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 22px;
+  padding: 5px 10px;
+}
+
+/* 聯絡方式 */
+
+.footer span{
+  display: inline-block;
+  letter-spacing: .3em;
+  margin-top: 5px;
+}
+
+
+
 .fa{
   display: block;
   color: #fff;
   text-align: center;
+  letter-spacing: .3em;
+  padding-bottom: 10px;
+}
+.footer .connect p:nth-child(4){
+  margin-bottom: 0;
 
 }
