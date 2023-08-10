@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family: "Noto Sans Tc";
 }
 a{
   color: black;
@@ -8,53 +9,367 @@ a{
 header{
   width: auto;
 }
- .header-fixed{
-  width: 1200px;
+/* RWD手機選單 */
+#menu_switch{
+  visibility: hidden;
+
+} 
+.header-fixed{
+  max-width: 1200px;
+  width: 100%;
   margin: auto;
-  height: 80px;
-  background-color: #fff;
+  padding: 5px 10px;
   display: flex;
   flex-wrap: wrap; 
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
+  background-color: #fff;
   left: 0;
   right: 0;
   top: 0;
   z-index: 2;
   font-size: 0;
 }
-.logo{
+.hb{
+  width:  50px;
+  height: 50px;
+  border: 1px solid #44d212;
+  text-align: center;
+  position: relative;
+  padding-top: 5px; 
+}
+.hb span{
+  display: inline-block;
+  width: 30px;
+  height: 0;
+  margin-bottom: 5px;
+  border: 5px solid #44d212;
+}
+
+.header-fixed .logo{
   width: 241px;
 }
-.logo img{
+
+.header-fixed .logo img{
   width: 100%;
 }
- 
+/* 選單 */
+.header-fixed .link{
+  background-color: #fff;
+  position: absolute;
+  width: 95%;
+  top: 100%;
+  margin: 0 2%;
+  flex-direction: column;
+  display: none; 
+}  
+   
 .header-fixed .link a{
-  display: inline-block;
-  height: 80px;;
-  padding: 10px;
+  display: block;
+  line-height: 4;
 }
 .header-fixed .link div{
+  display: inline-block;
+  width: 50%;
   font-size: 16px;
-  line-height: 60px;
+  text-align: left;
+}
+.header-fixed i {
+  width: 50%;
+  text-align: right;
+  font-size: 20px;
+  color: #44d212;
+  display: inline-block;
+  padding-right: 10px;
+}
+.header-fixed .link a + a{
+  border-top: 1px dotted #000;
+}
+#menu_switch:checked + .header-fixed .link{
+  display: flex;
+}
+#menu_switch:checked + .header-fixed .hb span:nth-child(1){
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transform: rotate(45deg);
+  padding: 0;
+}
+#menu_switch:checked + .header-fixed .hb span:nth-child(2){
+  display: none;
+}
+#menu_switch:checked + .header-fixed .hb span:nth-child(3){
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transform: rotate(-45deg);
+  padding: 0;
 }
 .header-fixed .link a:hover{
-  background-color: #44D212;
+background-color: #44D212;
+}
+
+.headerFixedSpace{
+width: 100%;
+height: 43px;
+
+}
+
+/* RWD平板橫選單 */
+/* @media screen and (min-width:767px) {
+
+
+}  */
+  
+@media screen and (min-width:1024px) {
+  .header-fixed{
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+  .hb{
+      display: none;
+    }      
+    
+  .header-fixed .link{
+      width: auto;
+      position: static;   
+      display: inline-block;
+      margin-right: 12px;
+   }   
+   .header-fixed .link a{
+      display: inline-block;
+      width: auto; 
+      text-align: center;
+      font-size: 0;
+    }
+    .header-fixed .link a + a{
+      border-top: 0;
+  }
+   .header-fixed .link div{
+    display: inline-block;
+    width: auto;
+    padding: 5px ;
+  
+  }
+  .header-fixed .link i{
+    display: none;
+  } 
+  .headerFixedSpace{
+    width: 100%;
+    height: 55px;
+  
+  }
 }
 
 /* footer */
+
 footer{
-  width: 1200px;
-  background-color: #00406C;
-  margin:auto;
+width: 100%;
+background-color: #00406C;
+margin:auto;
 }
+.footer{
+padding: 50px;
+}
+/* logo */
+footer .logo{
+/* width: 241px; */
+width: 50%;
+display: inline-block;
+}
+footer .pic{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+footer .logo img{
+width: 100%;
+vertical-align: top;
+
+}
+footer .social{
+display: inline-block;
+width: 40%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+footer .social i{
+width: 100%;
+vertical-align: top;
+color: white;
+font-size: 30px;
+}
+
+
+/* 參訪時間 */
+.footer h6{
+margin-top: 30px;
+font-size: 16px;
+display: inline-block;
+color: #fff;
+}
+.footer p{
+display: inline-block;
+color: #fff;
+}
+.footer .time a{
+font-size: 14px;
+background-color: #fff;
+border: 1px solid #00406C;
+display: inline-block;
+border-radius: 22px;
+padding: 5px 10px;
+margin-right: 0;
+}
+
+
+/* 聯絡方式 */
+
+.footer .connect h6{
+display: none;
+}
+.footer span{
+display: inline-block;
+letter-spacing: .3em;
+margin-top: 5px;
+}
+
+.footer .connect p{
+display: block;
+margin-top: 15px;
+}
+
+.fa{
+display: block;
+color: #fff;
+text-align: center;
+letter-spacing: .3em;
+padding-bottom: 10px;
+font-size: 12px;
+}
+.footer .connect p:nth-child(4){
+margin-bottom: 0;
+}
+
+@media screen and (min-width:768px){
 .footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 50px;
+}
+footer .pic{
+  display: inline-block;
+
+}
+/* logo */
+footer .logo{
+  /* width: 241px; */
+  width: 80%;
+}
+footer .logo img{
+  width: 100%;
+  vertical-align: top;
+  margin-top: -10px;
+}
+footer .social{
+  margin: 50px 0;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .social i{
+  width: 100%;
+  vertical-align: top;
+  color: white;
+  font-size: 40px;
+}
+.footer i:hover{
+  color: #00406C;
+  background-color: #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+/* 參訪時間 */
+.footer h6{
+  margin: 0;
+  font-size: 18px;
+  display: inline-block;
+  color: #fff;
+}
+footer .delete{
+  background-color: #44D212;
+  visibility: hidden;
+}
+.footer p{
+  font-size: 15px;
+  display: block;
+  margin: 40px auto;
+}
+.footer .time a{
+  background-color: #fff;
+  border: 1px solid #00406C;
+  display: inline-block;
+  border-radius: 22px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.footer .time a:hover{
+  background-color: #00406C;
+  border: 1px solid #00406C;
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 22px;
+  padding: 5px 10px;
+}
+
+/* 聯絡方式 */
+
+.footer span{
+  display: inline-block;
+  letter-spacing: .3em;
+  margin-top: 5px;
+}
+.footer .connect h6{
+  display: inline-block;
+}
+.footer .connect p{
+  font-size: 16px;
+  display: block;
+  margin: 40px auto;
+}
+
+.fa{
+  display: block;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .3em;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.footer .connect p:nth-child(4){
+  margin-bottom: 0;
+}
+}
+
+
+@media screen and (min-width:1024px){
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+footer .pic{
+  display: inline-block;
+
 }
 /* logo */
 footer .logo{
@@ -88,19 +403,26 @@ footer .social i{
 
 /* 參訪時間 */
 .footer h6{
+  margin: 0;
   font-size: 20px;
   display: inline-block;
   color: #fff;
 }
+footer .delete{
+  background-color: #44D212;
+  visibility: hidden;
+}
 .footer p{
+  font-size: 16px;
+  display: block;
   margin: 40px auto;
-  color: #fff;
 }
 .footer .time a{
   background-color: #fff;
   border: 1px solid #00406C;
   display: inline-block;
   border-radius: 22px;
+  font-size: 16px;
   padding: 5px 10px;
 }
 .footer .time a:hover{
@@ -120,8 +442,14 @@ footer .social i{
   letter-spacing: .3em;
   margin-top: 5px;
 }
-
-
+.footer .connect h6{
+  display: inline-block;
+}
+.footer .connect p{
+  font-size: 16px;
+  display: block;
+  margin: 40px auto;
+}
 
 .fa{
   display: block;
@@ -129,8 +457,9 @@ footer .social i{
   text-align: center;
   letter-spacing: .3em;
   padding-bottom: 10px;
+  font-size: 16px;
 }
 .footer .connect p:nth-child(4){
   margin-bottom: 0;
-
+}
 }

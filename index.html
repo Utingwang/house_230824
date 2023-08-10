@@ -10,45 +10,64 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://kit.fontawesome.com/d5f1fdca24.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
   <title>Document</title>
 </head>
 
 <body>
+
   <header>
+    <!-- RWD手機選單 -->
+    <input type="checkbox" id="menu_switch">
     <!-- 固定的地方 -->
+
     <div class="header-fixed">
       <a href="index.html" class="logo">
         <img src="pic/logo-background_white.png" alt="logo">
       </a>
+      <!-- RWD手機選單 -->
+      <div class="hb">
+        <label for="menu_switch">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- 導覽列 -->
       <div class="link">
         <a href="service.html">
           <div>服務項目</div>
+          <i class="fa-solid fa-right-long"></i>
         </a>
         <a href="about_us.html">
           <div>關於我們</div>
+          <i class="fa-solid fa-right-long"></i>
         </a>
         <a href="live.html">
           <div>入住流程</div>
+          <i class="fa-solid fa-right-long"></i>
         </a>
         <a href="">
           <div>收費標準</div>
+          <i class="fa-solid fa-right-long"></i>
         </a>
         <a href="activity.html">
           <div>活動消息</div>
+          <i class="fa-solid fa-right-long"></i>
         </a>
         <a href="connection.html">
           <div>聯絡我們</div>
+          <i class="fa-solid fa-right-long"></i>
         </a>
       </div>
     </div>
-
-
+    <div class="headerFixedSpace"></div>
     <!-- 輪播背景圖 -->
 
     <div class="header_main">
+      <img src="pic/font-page/Mask group front-page3.png" class="space" alt="">
       <div class="txt">
         <h2>Houseu養護中心</h2>
         <p>以專業、體貼為宗旨！<br>
@@ -68,127 +87,125 @@
     </div>
 
   </header>
-  <div class="space"></div>
-<!-- 宗旨 -->
+
   <main>
     <div class="purpose">
       <div class="backgroundImg">
         <img src="pic/font-page/Group 12.png" alt="">
         <div class="important">
-            <h1>
-                <div>專 業、細 心、體 貼！</div>
-                <div>老 吾 老 以 及 人 之 老</div>
-                <div><span>House</span>宗 旨 就 是
-            </h1>
+          <h1>
+            <div>專 業、細 心、體 貼！</div>
+            <div>老 吾 老 以 及 人 之 老</div>
+            <div><span>House</span>宗 旨 就 是
+          </h1>
         </div>
         <div class="text">
-            <p>現在的台灣已邁入高齡化社會，長輩的照顧和安養成了許多家庭會碰到的課題。
-            <p>我們秉持著老吾老以及人之老，幼吾幼以及人之幼的精神，以專業心細體貼為宗旨，將院內的長輩視為自己的親人，給予最真心的照顧。</p>
-            <p>House護理之家提供多元的房型、貼心的護理人員，以及專業的照顧團隊。期望所有年長者能夠得到最體貼的照顧，也期望所有年輕人可以無後顧之憂，安心地打拼。</p>
-        </div>  
+          <p>現在的台灣已邁入高齡化社會，長輩的照顧和安養成了許多家庭會碰到的課題。
+          <p>我們秉持著老吾老以及人之老，幼吾幼以及人之幼的精神，以專業心細體貼為宗旨，將院內的長輩視為自己的親人，給予最真心的照顧。</p>
+          <p>House護理之家提供多元的房型、貼心的護理人員，以及專業的照顧團隊。期望所有年長者能夠得到最體貼的照顧，也期望所有年輕人可以無後顧之憂，安心地打拼。</p>
+        </div>
       </div>
     </div>
-
     <!-- 三欄圖文區 -->
+    <h3>Abous Us</h3>
     <article class="introduce">
-      <h3>Abous Us</h3>
-        <div class="card">
-            <div class="photo">
-                <img src="pic/font-page/envior.png">
-            </div>
-            <div class="txt">
-                <h4>舒適的環境</h4>
-                <p>寬闊空間 | 藝術庭院 |清幽環境 </p>
-                <p>
-                  本養老院佔地千坪，有約450坪的庭院空間，並請來自美國的專業團隊設計庭院，希望能讓長輩在賞心悅目的環境下生活！
-                <a href="about_us.html">了解更多</a>
-            </div>
+      <div class="card">
+        <div class="photo">
+          <img src="pic/font-page/envior.jpg">
         </div>
-
-        <div class="card">
-            <div class="photo">
-                <img src="pic/font-page/people.png">
-            </div> 
-            <div class="txt people">
-                <h4>親切的人員</h4>
-                <p>專業護理 | 細心照料 |觀察入微 </p>
-                <p>
-                  我們的護理人員皆具備基礎的醫療知識，並將本院的宗旨銘記於心，將長輩視為自己的親人，給予最貼心與細心的照料，致力於給予長輩最好的陪伴。
-                </p>
-                <a href="about_us.html">了解更多</a>
-            </div>
+        <div class="txt">
+          <h4>舒適的環境</h4>
+          <p>寬闊空間 | 藝術庭院 |清幽環境 </p>
+          <p>
+            本養老院佔地千坪，有約450坪的庭院空間，並請來自美國的專業團隊設計庭院，希望能讓長輩在賞心悅目的環境下生活！
+            <a href="about_us.html">了解更多</a>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="photo">
-              <img src="pic/font-page/thing.png">
-          </div>
-            <div class="txt">
-                <h4>友善的器具</h4>
-                <p>友善設計 | 專業醫療 |特殊設計 </p>
-                 <p>
-                    我們所有設備的打造都以長輩為出發點，”扶手”的設計更是基本中的基本，給予長輩在日常生活中最大的方便與安全。
-                </p>
-                <a href="about_us.html">了解更多</a>
-            </div>
+      <div class="card">
+        <div class="photo">
+          <img src="pic/font-page/people.jpg">
+        </div>
+        <div class="txt people">
+          <h4>親切的人員</h4>
+          <p>專業護理 | 細心照料 |觀察入微 </p>
+          <p>
+            我們的護理人員皆具備基礎的醫療知識，並將將長輩視為自己的親人，給予最貼心與細心的照料，致力於給予長輩最好的陪伴。
+          </p>
+          <a href="about_us.html">了解更多</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="pic/font-page/thing.jpg">
+        </div>
+        <div class="txt">
+          <h4>友善的器具</h4>
+          <p>友善設計 | 專業醫療 |特殊設計 </p>
+          <p>
+            我們所有設備的打造都以長輩為出發點，”扶手”的設計更是基本中的基本，給予長輩在日常生活中最大的方便與安全。
+          </p>
+          <a href="about_us.html">了解更多</a>
+        </div>
       </div>
     </article>
     <!-- 最新消息 -->
     <h3>New</h3>
 
-    <article class="new">  
-        <ul>
-            <li>
-                <div>2023/06/28</div>
-                <div><span>置頂</span></div>
-                <div>賀！本院榮獲2023年<span>優秀護理之家獎!</span></div>
-            </li>
-            <li>
-                <div>2023/07/28</div>
-                <div>即將舉辦</div>
-                <div>8/5 歡慶父親節，將於庭院舉辦闖關活動(志工招幕中)。</div>
-            </li>
-            <li>
-                <div>2023/07/22</div>
-                <div>已結束</div>
-                <div>感謝輔道大學長德志工社表驗話劇 ”孫悟空大戰牛魔王”。</div>
-            </li>            
-            <li>
-                <div>2023/07/12</div>
-                <div>已結束</div>
-                <div>王院長參與桃園市政府年長護理講座。</div>
-            </li>            
-            <li>
-                <div>2023/07/08</div>
-                <div>已結束</div>
-                <div>本院與亞西醫院家醫科合作，陳主任率領三名護理師來到本院替長輩做身體健康檢查！</div>
-            </li>            
-            <li>
-                <div>2023/06/22</div>
-                <div>已結束</div>
-                <div>感謝民志大學慈慧志工社來到本院歡慶端午！</div>
-            </li>
-            <li>
-                <div>2023/06/12</div>
-                <div>已結束</div>
-                <div>桃園消防大隊到本院作消防安檢。</div>
-            </li>
-            <li>
-                <div>2023/06/10</div>
-                <div>已結束</div>
-                <div>我沒梗了，最後一個不會被發現吧！</div>
-            </li>
-        </ul>
+    <article class="new">
+      <ul>
+        <li>
+          <div>2023/06/28</div>
+          <div><span>置頂</span></div>
+          <div>賀！本院榮獲2023年<span>優秀護理之家獎!</span></div>
+        </li>
+        <li>
+          <div>2023/07/28</div>
+          <div>即將舉辦</div>
+          <div>8/5 歡慶父親節，將於庭院舉辦闖關活動(志工招幕中)。</div>
+        </li>
+        <li>
+          <div>2023/07/22</div>
+          <div>已結束</div>
+          <div>感謝輔道大學長德志工社表驗話劇 ”孫悟空大戰牛魔王”。</div>
+        </li>
+        <li>
+          <div>2023/07/12</div>
+          <div>已結束</div>
+          <div>王院長參與桃園市政府年長護理講座。</div>
+        </li>
+        <li>
+          <div>2023/07/08</div>
+          <div>已結束</div>
+          <div>本院與亞西醫院家醫科合作，陳主任率領三名護理師來到本院替長輩做身體健康檢查！</div>
+        </li>
+        <li>
+          <div>2023/06/22</div>
+          <div>已結束</div>
+          <div>感謝民志大學慈慧志工社來到本院歡慶端午！</div>
+        </li>
+        <li>
+          <div>2023/06/12</div>
+          <div>已結束</div>
+          <div>桃園消防大隊到本院作消防安檢。</div>
+        </li>
+        <li>
+          <div>2023/06/10</div>
+          <div>已結束</div>
+          <div>我沒梗了，最後一個不會被發現吧！</div>
+        </li>
+      </ul>
     </article>
   </main>
-  
-<!-- 志工聯絡 -->
+
+  <!-- 志工聯絡 -->
   <article class="item">
     <div>
-        <a href="about_us.html">
-          <i class="fa-solid fa-hand-holding-heart"></i>
-          <h5>志工</h5>
-          <p>傳遞溫暖與感動，誠摯邀請您加入House!</p>
+      <a href="about_us.html">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+        <h5>志工</h5>
+        <p>傳遞溫暖與感動，誠摯邀請您加入House!</p>
       </a>
     </div>
     <div>
@@ -213,7 +230,8 @@
       </a>
     </div>
   </article>
-  
+
+  <!-- footer -->
 
   <footer>
     <div class="footer">
@@ -234,12 +252,12 @@
         </div>
       </div>
       <div class="time">
-        <h6>參訪時間</h6>
+        <h6>參訪時間<span class="delete">：</span></h6>
         <p><span>0900-2000</span></p>
-        <a href="">預約參觀</a>
+        <a href="connection.html">預約參觀</a>
       </div>
       <div class="adr">
-        <h6>地址</h6>
+        <h6>地址<span class="delete">:</span></h6>
         <p>桃園市中壢區復興路46號</p>
         <a href=""></a>
       </div>
@@ -259,5 +277,5 @@
     <i class="fa fa-copyright" aria-hidden="true">本網站為緯育TibaMe前端工程師班第86期學員專題作品，本平台僅供學習、展示之用。</i>
   </footer>
 
-
+</body>
 </html>
