@@ -16,124 +16,131 @@
 </head>
 
 <body>
-    <header>
+<header>
+    <!-- RWD手機選單 -->
+    <input type="checkbox" id="menu_switch">
+    <!-- 固定的地方 -->
+
+    <div class="header-fixed">
+        <a href="index.html" class="logo">
+            <img src="pic/logo-background_white.png" alt="logo">
+        </a>
         <!-- RWD手機選單 -->
-        <input type="checkbox" id="menu_switch">
-        <!-- 固定的地方 -->
-
-        <div class="header-fixed">
-            <a href="index.html" class="logo">
-                <img src="pic/logo-background_white.png" alt="logo">
-            </a>
-            <!-- RWD手機選單 -->
-            <div class="hb">
-                <label for="menu_switch">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-
-            <!-- 導覽列 -->
-            <div class="link">
-                <a href="service.html">
-                    <div>服務項目</div>
-                    <i class="fa-solid fa-right-long"></i>
-                </a>
-                <a href="about_us.html">
-                    <div>關於我們</div>
-                    <i class="fa-solid fa-right-long"></i>
-                </a>
-                <a href="live.html">
-                    <div>入住流程</div>
-                    <i class="fa-solid fa-right-long"></i>
-                </a>
-                <a href="">
-                    <div>收費標準</div>
-                    <i class="fa-solid fa-right-long"></i>
-                </a>
-                <a href="activity.html">
-                    <div>活動消息</div>
-                    <i class="fa-solid fa-right-long"></i>
-                </a>
-                <a href="connection.html">
-                    <div>聯絡我們</div>
-                    <i class="fa-solid fa-right-long"></i>
-                </a>
-            </div>
+        <div class="hb">
+            <label for="menu_switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
-        <div class="headerFixedSpace"></div>
-        <!-- 固定結束 -->
-        <main>
-            <h3>Connect Us</h3>
-            <!-- 資訊 -->
-            <div class="contect">
-                <article>
-                    <h4>電話諮詢</h4>
-                    <p>(03)2966-761</p>
-                    <p>參訪時間:0900~2000</p>
-                </article>
 
-                <article>
-                    <h4>通過網路聯繫</h4>
-                    <div class="choise">
-                        <span id="visit">
-                            預約參觀
-                        </span>
-                        <span id="question">
-                            詢問問題
-                        </span>
+        <!-- 導覽列 -->
+        <div class="link">
+            <a href="service.html">
+                <div>服務項目</div>
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+            <a href="about_us.html">
+                <div>關於我們</div>
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+            <a href="live.html">
+                <div>入住流程</div>
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+            <a href="pay.html">
+                <div>收費標準</div>
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+            <a href="activity.html">
+                <div>活動消息</div>
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+            <a href="connection.html">
+                <div>聯絡我們</div>
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+        </div>
+    <div class="headerFixedSpace"></div>
+</header>
+<!-- 固定結束 -->
+    <main>
+        <h3>Connect Us</h3>
+        <!-- 資訊 -->
+        <div class="contect">
+            <article>
+                <h4>電話諮詢</h4>
+                <p>(03)2966-761</p>
+                <p>參訪時間:0900~2000</p>
+            </article>
+
+            <article>
+                <h4>通過網路聯繫</h4>
+                <div class="choise">
+                    <span id="visit">預約參觀</span>
+                    <span id="question">詢問問題</span>
+                </div>
+
+                <!-- 表格 -->
+                <form class="questionForm">
+                    <div>
+                        <label for="name">姓名:</label>
+                        <input type="text" id="name" class=" browserTxt">
                     </div>
-
-                    <!-- 表格 -->
-                    <form class="questionForm">
-                        <div>
-                            <label for="name">姓名:</label>
-                            <input type="text" id="name" class=" browserTxt">
+                    <div>
+                        <label for="tel">電話:</label>
+                        <input type="tel" id="tel" class=" browserTxt">
+                    </div>
+                    <div>
+                        <label for="adr">地址:</label>
+                        <input type="text" id="ter" class=" browserTxt">
+                    </div>
+                    <div>
+                        <label for="email">信箱:</label>
+                        <input type="email" id="email" class=" browserTxt">
+                    </div>
+                    <div>
+                        <label for="asking">詢問內容:</label>
+                        <textarea name="asking" id="asking" class=" browserTxt"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">送出</button>
+                    </div>
+                </form>
+                <form class="visitForm">
+                    <div>
+                        <label for="name">姓名:</label>
+                        <input type="text" id="name" class=" browserTxt">
+                    </div>
+                    <div>
+                        <label for="tel">電話:</label>
+                        <input type="tel" id="tel" class="browserTxt">
+                    </div>
+                    <div  class="DayDate">
+                        <div class="day">
+                            <label for="">日期:</label>
+                            <input id="" type="date" class="browserTxt">
                         </div>
-                        <div>
-                            <label for="tel">電話:</label>
-                            <input type="tel" id="tel" class=" browserTxt">
+                        <div class="time">
+                            <label for="">選擇:</label>  
+                            <select class="browserTxt">
+                                <option value="1">0900-1200</option> 
+                                <option value="2">1400-1700</option>
+                            </select>                             
                         </div>
-                        <div>
-                            <label for="adr">地址:</label>
-                            <input type="text" id="ter" class=" browserTxt">
-                        </div>
-                        <div>
-                            <label for="email">信箱:</label>
-                            <input type="email" id="email" class=" browserTxt">
-                        </div>
-                        <div>
-                            <label for="asking">詢問內容:</label>
-                            <textarea name="asking" id="asking" class=" browserTxt"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit">送出</button>
-                        </div>
-
-                    </form>
-                    <form class="visitForm">
-                        <div>
-                            <label for="name">姓名:</label>
-                            <input type="text" id="name" class=" browserTxt">
-                        </div>
-                        <div>
-                            <label for="tel">電話:</label>
-                            <input type="tel" id="tel" class=" browserTxt">
-                        </div>
-                        <div>
-                            <label for="time">參訪時間:</label>
-                            <input type="text" id="ter" class=" browserTxt">
-                        </div>
-                        <div>
-                            <label for="asking">備註需求:</label>
-                            <textarea name="asking" id="asking" class=" browserTxt"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit">送出</button>
-                        </div>
-
-                    </form>
+                   </div>
+                    <!-- <div>
+                        <label for="">時間</label>
+                        <input type="text" class="browserTxt">
+                    </div> -->
+                    <div>
+                        <label for="asking">備註需求:</label>
+                        <textarea name="asking" id="asking" class=" browserTxt"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">送出</button>
+                    </div>
+                </form>
                 </article>
                 <!-- 地址 -->
                 <article class="map">
@@ -146,51 +153,57 @@
                 </article>
             </div>
         </main>
-        <!-- footer -->
+  <!-- footer -->
 
-        <footer>
-            <div class="footer">
-                <div class="pic">
-                    <div class="logo">
-                        <img src="pic/logo_black.png" alt="logo">
-                    </div>
-                    <div class="social">
-                        <a href="#">
-                            <i class="fa-brands fa-square-facebook"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-square-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="time">
-                    <h6>參訪時間<span class="delete">：</span></h6>
-                    <p><span>0900-2000</span></p>
-                    <a href="">預約參觀</a>
-                </div>
-                <div class="adr">
-                    <h6>地址<span class="delete">:</span></h6>
-                    <p>桃園市中壢區復興路46號</p>
-                    <a href=""></a>
-                </div>
-                <div class="connect">
-                    <h6>聯絡方式</h6>
-                    <p>電話: <br>
-                        <span>(02)29683698</span>
-                    </p>
-                    <p>手機: <br>
-                        <span>0975-298-658</span>
-                    </p>
-                    <p>手機:<br>
-                        <span>0963-777-888</span>
-                    </p>
-                </div>
-            </div>
-            <i class="fa fa-copyright" aria-hidden="true">本網站為緯育TibaMe前端工程師班第86期學員專題作品，本平台僅供學習、展示之用。</i>
-        </footer>
+  <footer>
+    <div class="footer">
+      <div class="pic">
+          <div class="logo">
+              <img src="pic/logo_black.png" alt="logo">
+          </div>
+          <div class="social">
+              <a href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+          </div>
+      </div>
+      <div class="time">
+          <div>
+              <h6>參訪時間<span class="delete">：</span></h6>
+              <p><span>0900-2000</span></p>
+          </div>
+          <div>
+              <a href="connection.html">預約參觀</a>
+          </div>
+      </div>
+      <div class="AdrTel">
+          <div class="adr">
+              <h6>地址<span class="delete">:</span></h6>
+              <p>桃園市中壢區復興路46號</p>
+          </div>
+          <div class="connect">
+              <h6>聯絡方式</h6>
+              <p>電話:
+              <span>(02)29683698</span>
+              </p>
+              <p>手機:
+              <span>0975-298-658</span>
+              </p>
+              <p>手機:
+              <span>0963-777-888</span>
+              </p>
+          </div>
+      </div>
+    </div>
+    <i class="fa fa-copyright" aria-hidden="true">本網站為緯育TibaMe前端工程師班第86期學員專題作品，本平台僅供學習、展示之用。</i>
+  </footer>
+
 </body>
 
 <script>

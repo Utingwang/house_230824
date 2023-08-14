@@ -1,0 +1,125 @@
+*{
+  font-family: "Noto Sans Tc";
+  box-sizing: border-box;
+}
+h3{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  -webkit-text-stroke: 1px black;
+  color: #44D212;
+  margin: 10px;
+  text-align: center;
+}
+  
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+/* 文字區 */
+.word{
+    width: 70%;
+    margin: auto;
+}
+.word li{
+    line-height: 2;
+}
+.word span{
+    visibility: hidden;
+}
+/* 表格區 */
+table{
+    width: 100%;
+    margin: 0 auto 50px;
+    border: 3px double black;
+    text-align: center;
+
+}
+th{
+    width: 33.333333%;
+    padding: 15px;
+    border: 1px solid black;
+}
+td{
+    width: 33.333333%;
+    padding: 15px;
+    border: 1px solid black;
+}
+table .title{
+    background-color: #44D212;
+}
+table .ex{
+    line-height: 1.5;
+    vertical-align: middle;
+}
+/* 三大保證 */
+article{
+    width: 100%;
+    margin:50px auto 0;
+    padding: 50px 0;
+    background-color: rgba(50,100,135,50%);
+    color: #fff;
+}
+article > h4{
+    font-family: 'Permanent Marker', "Noto Sans Tc";
+    font-size:30px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+    color: #44D212;
+    margin: 10px;
+    text-align: center;
+    line-height: 2;
+}
+article > h4 span{
+    background-color:#00406C;
+}
+
+article ul{
+    width: 90%;
+    margin: auto;
+    font-family:  'Permanent Marker', "Noto Sans Tc";
+}
+article li span{
+    font-family:  'Permanent Marker', "Noto Sans Tc";
+    font-size: 40px;
+    -webkit-text-stroke: 1px black;
+}
+article p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+article li div{
+    display: flex;
+}
+article li h4{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 2;
+    color: #fff;
+}
+article .None{
+    visibility: hidden; 
+}
+@media screen and (min-width:768px) {
+    article > h4{
+        font-size: 40px;
+    }
+    table{
+        width: 80%;
+        margin: auto;
+    }
+    article ul{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    table{
+        width: 60%;
+        margin: auto;
+    }
+    article ul{
+        width: 70%;
+    }
+}

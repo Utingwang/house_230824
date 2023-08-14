@@ -1,150 +1,304 @@
 *{
     font-family: "Noto Sans Tc";
+    box-sizing: border-box;
   }
-.space{
-    color: white;
-    height: 80px;
-    width: 1200px;
-    margin: auto;
-}
-h3{
+  h3{
     font-family: 'Permanent Marker', cursive;
-    font-size: 60px;
-    background-color: #fff;
+    font-size: 40px;
     -webkit-text-stroke: 1px black;
-    color: #fff;
-    margin: 20px;
+    color: #44D212;
+    margin: 10px;
+    text-align: center;
   }
-
-main{
-    width: 1200px;
-    margin: auto;
-}
-/* 環境 */
-h4{
+  
+  
+  h4{
     text-align: center;
     font-size: 30px;
-    font-weight: bolder;
-}
-.enviro{
+    line-height: 2;
+  
+  }
+  main{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+  .enviro .card{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
+    flex-direction: column-reverse;
+  }
+  .enviro p{
+    line-height: 2;
+    width: 80%;
+    margin: auto;
+  }
+  .enviro .pic{
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  
+  .enviro img{
+    width: 100%;
+    vertical-align: top;
+  }
+  
+  /* 多種房型 */
+  .phoneHide{
+    display: none;
+  }
+  .house_type{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    background-color: #00406C;
+    color: white;
+  }
+  #itemView{
+    width: 95%;
+    margin: auto;
+    position: relative;
+  
+  }
+  #itemView .hid{
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+  }
+  #itemView .item{
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+  
+  .house_type p{
+    line-height: 2;
+    width: 80%;
+    margin: auto;
+  }
+  #btnLeft,#btnRight{
+    padding: 20px;
+    border: 1px solid #fff;
+    display: inline-block;
+  }
+  .house_type .btn{
+    width: 100%;
+    text-align: center;
+  }
+  
+   /* 專業器材與人才  */
+.computerHide{
+    display: block;
 }
-.enviro .card{
-    width: 33.3333%;
+.phoneHide{
+    display: none;
 }
-.enviro img{
+.major{
+    padding: 10px;
     width: 100%;
 }
-.enviro p{
+.major .pic{
+    width: 100%;
     margin: auto;
-    width: 263px;
-    font-size: 16px;
-    line-height: 2;
-
-}
-.enviro .card:first-child{
-    position: relative;
-    left: 50px;
-    top: 50px;
-    z-index: 1;
-}
-.enviro .card:first-child p{
-    margin-left: 0;
-}
-.enviro .card:last-child{
-    position: relative;
-    right: 50px;
-    top: 50px;
-    z-index: 1;
-}
-.enviro .card:last-child p{
-    margin-right: 0;
-}
-
-
-/* 多種房型 */
-.house_type{
-    background-color: #ccc;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
 }
-.house_type div:first-child{
-    width: 320px;
+.major .changeSpace{
+    border: 10px double #333;
+    width: 80%;
+}
+.major .changeSpace img{
+    width: 100%;
+    margin: auto;
+    vertical-align: top;
+}
+#smallPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 18%;
+}
+  
+#smallPanel img{
+    width: 100%;
+    vertical-align: top;
+}
+.major p{
+    line-height: 2;
+    width: 80%;
     margin: auto;
 }
-.house_type h4{
+
+  
+  
+  @media screen and (min-width:768px) {
+  h3{
+    position: absolute;
+    left: 5%;
+  }
+  /* 環境 */
+  .enviro h4{
+    font-size: 40px;
+    position: absolute;
+    right: 15%;
+  }
+  .enviro{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+  }
+  .enviro .card{
+      width: 33.3333%;
+      flex-direction: column;
+  }
+  
+  .enviro p{
+    margin: auto;
+    width: 80%;
+    font-size: 14px;
+    line-height: 2;
+  }
+  .enviro .card:first-child{
+      position: relative;
+      left: 30px;
+      top: 80px;
+      z-index: 1;
+  }
+  .enviro .card:first-child p{
+      margin-left: 0;
+  }
+  
+  .enviro .card:last-child{
+      position: relative;
+      right: 30px;
+      top: 80px;
+      z-index: 1;
+  }
+  .enviro .card:last-child p{
+      margin-right: 0;
+  }
+  
+  
+  /* 多種房型 */
+  .computerHide{
+    display: none;
+  }
+  .phoneHide{
     display: block;
+  }
+  .house_type{
+    margin-top: 50px;
+    padding: 70px 0 80px;
+    background-color: #00406C;  
+    flex-direction: row;
+    align-items: center;
+  }
+  #itemView{
+    width: 50%;
+    text-align: center;
+  }
+  #itemView .hid{
+    display: none;
+  }
+  #itemView .item{
+    border: 5px solid #333;
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    position: static;
+  }
+  #itemView .one_bed{
+    margin-top: -6%;
+  }
+  
+  .house_type .btn{
+    display: none;
+  }
+  .house_type div:first-child{
+    margin-top: 0;
+    width: 45%;
+    margin: auto;
+    margin-top: 0;
+  }
+  .house_type h4{
+    color: #fff;
+    text-align: left;
     font-size: 32px;
-    font-weight: bolder;
-    margin-bottom: 10%;
-}
-.house_type p{
-    font-size: 16px;
-    line-height: 32px;
-
-}
-.house_type div:last-child{
-    font-size: 0;
-    display: inline-block;
-    width: 628px;
-    margin-right: 45px;
-
-}
-.house_type div:last-child img{
-    display: inline-block;
-    border: 5px solid black;
-    width: 304px;
-    height: 245px;
-    margin-right: 10px;
-}
-.house_type img.one_bed{
-    margin-top: -10%;
-    margin-left: 25%;
-}
-
-/* 專業器材與人才 */
-.major{
+  }
+  .house_type p{
+      font-size: 16px;
+      line-height: 2;
+  }
+  
+  /* 專業器材與人才 */
+  .majorComputer{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 1200px;
-    margin: 50px auto;
-}
-.major div:first-child{
-    width:  243px;
-    margin-left: 100px;
-    padding-top: 0;
-    
-}
-.major img{
     width: 100%;
-}
-
-.major div:nth-child(2){
-width: 372px;
-margin: 0 50px;
-}
-
-.major div:nth-child(2) h3{
+    margin: 50px auto;
+  }
+  .majorComputer div:first-child{
+    margin-top: 10%;
+    width:  33.33333%;
+    text-align: center;
+  }
+  .majorComputer img{
+    display: inline-block;
+    width: 80%;
+  }
+  
+  .majorComputer div:nth-child(2){
+    width: 33.333333%;
+    margin-top: 0 50px;
+  }
+  
+  .majorComputer div:nth-child(2) h3{
     font-size: 24px;
     text-align: center;
     font-weight: bolder;
-}
-.major div:nth-child(2) p{
-    width: 317px;
-    line-height: 32px;
-    margin: 30px auto;
-
-}
-.major div:last-child{
-    width: 362px;
-}
-
-
+  }
+  .majorComputer div:nth-child(2) p{
+    width: 100%;
+    line-height: 2;
+  }
+  .majorComputer div:nth-child(2) img{
+    width: 100%;
+  }
+  .majorComputer div:last-child{
+    width: 33.333333%;
+    text-align: center;
+  }
+  .majorComputer div:last-child img{
+    width: 80%;
+    margin-top: 20%;
+  }
+  
+  
+  }
+  
+  @media screen and (min-width:1024px){
+    .enviro p{
+      font-size: 16px;
+    }
+    .enviro .card:first-child{
+      top: 120px;
+    }
+    .enviro .card:last-child{
+      top: 120px;
+    }
+    .house_type{
+      margin-top: 60px;
+      padding: 100px 0 80px;
+    }
+    .house_type p{
+      width: 70%;
+    }
+    
+  }
+  

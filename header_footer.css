@@ -12,8 +12,10 @@ header{
 /* RWD手機選單 */
 #menu_switch{
   visibility: hidden;
-
 } 
+
+
+
 .header-fixed{
   max-width: 1200px;
   width: 100%;
@@ -32,8 +34,8 @@ header{
   font-size: 0;
 }
 .hb{
-  width:  50px;
-  height: 50px;
+  width:  40px;
+  height: 40px;
   border: 1px solid #44d212;
   text-align: center;
   position: relative;
@@ -41,14 +43,14 @@ header{
 }
 .hb span{
   display: inline-block;
-  width: 30px;
+  width: 25px;
   height: 0;
-  margin-bottom: 5px;
-  border: 5px solid #44d212;
+  margin-bottom: 6px;
+  border: 3px solid #44d212;
 }
 
 .header-fixed .logo{
-  width: 241px;
+  width: 200px;
 }
 
 .header-fixed .logo img{
@@ -58,16 +60,19 @@ header{
 .header-fixed .link{
   background-color: #fff;
   position: absolute;
-  width: 95%;
+  width: 100%;
   top: 100%;
-  margin: 0 2%;
+  left:0;
   flex-direction: column;
-  display: none; 
+  display: none; ;
+  border-top: 1px dotted #333;
+  border-bottom: 1px dotted #333;
 }  
    
 .header-fixed .link a{
   display: block;
   line-height: 4;
+  margin: 0 10px;
 }
 .header-fixed .link div{
   display: inline-block;
@@ -89,6 +94,9 @@ header{
 #menu_switch:checked + .header-fixed .link{
   display: flex;
 }
+#menu_switch:checked + .header-fixed .hb{
+  border: none;
+}
 #menu_switch:checked + .header-fixed .hb span:nth-child(1){
   position: absolute;
   inset: 0;
@@ -106,360 +114,292 @@ header{
   transform: rotate(-45deg);
   padding: 0;
 }
+.header-fixed .link a:active{
+  background-color: #44D212;
+}
 .header-fixed .link a:hover{
-background-color: #44D212;
+  background-color: #44D212;
 }
 
 .headerFixedSpace{
 width: 100%;
-height: 43px;
-
+height: 32px;
 }
 
-/* RWD平板橫選單 */
-/* @media screen and (min-width:767px) {
 
 
-}  */
-  
-@media screen and (min-width:1024px) {
+
+/* footer */
+footer{
+  padding: 20px 0 10px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%; 
+  background-color: #00406C; 
+}
+footer .footer{
+  width: 80%;
+  margin: auto;
+}
+.footer div + div{
+  margin-top: 20px;
+}
+.footer .pic{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+} 
+.footer .logo{
+  width: 250px;
+  margin: auto;
+}
+.footer .logo img{
+  width: 100%;
+  vertical-align: sub;
+}
+.footer .social{
+  width: 241px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+} 
+.footer .social i{
+  vertical-align: top;
+  color: white;
+  font-size: 35px;
+  border: 1px solid #00406C;
+  padding-left: 1.5px;
+  padding-right: 1.5px;
+}
+.footer .social i:hover{
+  color: #00406C;
+  background-color: #fff;
+}
+.footer .social a:hover{
+  color: #00406C;
+  background-color: #fff;
+}
+
+.footer .time{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer h6{
+  font-size: 16px;
+  line-height: 2;
+  color: #fff;
+}
+.footer span{
+  letter-spacing: 0.2em;
+}
+.footer p{
+  font-size: 16px;
+  line-height: 2;
+  color: #fff;
+}
+.footer .time div:nth-child(1){
+  width: 241px;
+  margin: auto;
+}
+.footer .time h6, .footer .time p{
+  display: inline-block;
+}
+.footer .time div:nth-child(2){
+  width: 241px;
+  margin: auto;
+}
+.footer .time a{
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  font-size: 14px;
+  line-height: 2;
+  background-color: #fff;
+  border: 1px solid #00406C;
+  border-radius: 22px;
+}
+/* 地址跟電話的div */
+.footer .AdrTel{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .adr{
+  width: 241px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.footer .connect{
+  width: 241px;
+  margin: auto;
+}
+.fa{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+
+@media screen and (min-width:768px) {
   .header-fixed{
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-top: 0;
-      padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+  }
+  .header-fixed .logo{
+    width: 241px;
+  }
+  .header-fixed .logo img{
+    vertical-align: sub;
+    width: 100%;
   }
   .hb{
       display: none;
-    }      
-    
+  }       
   .header-fixed .link{
+      display: inline-block;
       width: auto;
       position: static;   
-      display: inline-block;
-      margin-right: 12px;
-   }   
-   .header-fixed .link a{
+      font-size: 0px;
+      border-top: none;
+      border-bottom: none;
+  }   
+  .header-fixed .link a{
       display: inline-block;
       width: auto; 
       text-align: center;
-      font-size: 0;
-    }
-    .header-fixed .link a + a{
-      border-top: 0;
+      font-size: 16px;
+      margin: 0;
+  }
+  .header-fixed .link a + a{
+      border-top: none;
   }
    .header-fixed .link div{
     display: inline-block;
     width: auto;
     padding: 5px ;
-  
   }
-  .header-fixed .link i{
+  .header-fixed i{
     display: none;
   } 
   .headerFixedSpace{
     width: 100%;
     height: 55px;
-  
   }
 }
 
-/* footer */
-
-footer{
-width: 100%;
-background-color: #00406C;
-margin:auto;
+.footer div + div{
+  margin-top: 40px;
 }
-.footer{
-padding: 50px;
-}
-/* logo */
-footer .logo{
-/* width: 241px; */
-width: 50%;
-display: inline-block;
-}
-footer .pic{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-footer .logo img{
-width: 100%;
-vertical-align: top;
-
-}
-footer .social{
-display: inline-block;
-width: 40%;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-footer .social i{
-width: 100%;
-vertical-align: top;
-color: white;
-font-size: 30px;
-}
-
-
-/* 參訪時間 */
-.footer h6{
-margin-top: 30px;
-font-size: 16px;
-display: inline-block;
-color: #fff;
-}
-.footer p{
-display: inline-block;
-color: #fff;
-}
-.footer .time a{
-font-size: 14px;
-background-color: #fff;
-border: 1px solid #00406C;
-display: inline-block;
-border-radius: 22px;
-padding: 5px 10px;
-margin-right: 0;
-}
-
-
-/* 聯絡方式 */
-
-.footer .connect h6{
-display: none;
-}
-.footer span{
-display: inline-block;
-letter-spacing: .3em;
-margin-top: 5px;
-}
-
-.footer .connect p{
-display: block;
-margin-top: 15px;
-}
-
-.fa{
-display: block;
-color: #fff;
-text-align: center;
-letter-spacing: .3em;
-padding-bottom: 10px;
-font-size: 12px;
-}
-.footer .connect p:nth-child(4){
-margin-bottom: 0;
-}
-
-@media screen and (min-width:768px){
-.footer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px;
-}
-footer .pic{
-  display: inline-block;
-
-}
-/* logo */
-footer .logo{
-  /* width: 241px; */
-  width: 80%;
-}
-footer .logo img{
-  width: 100%;
-  vertical-align: top;
-  margin-top: -10px;
-}
-footer .social{
-  margin: 50px 0;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .social i{
-  width: 100%;
-  vertical-align: top;
-  color: white;
-  font-size: 40px;
-}
-.footer i:hover{
-  color: #00406C;
-  background-color: #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-}
-
-/* 參訪時間 */
-.footer h6{
-  margin: 0;
-  font-size: 18px;
-  display: inline-block;
-  color: #fff;
-}
-footer .delete{
-  background-color: #44D212;
-  visibility: hidden;
-}
-.footer p{
-  font-size: 15px;
-  display: block;
-  margin: 40px auto;
-}
-.footer .time a{
-  background-color: #fff;
-  border: 1px solid #00406C;
-  display: inline-block;
-  border-radius: 22px;
-  font-size: 16px;
-  padding: 5px 10px;
-}
-.footer .time a:hover{
-  background-color: #00406C;
-  border: 1px solid #00406C;
-  color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
-  border-radius: 22px;
-  padding: 5px 10px;
-}
-
-/* 聯絡方式 */
-
-.footer span{
-  display: inline-block;
-  letter-spacing: .3em;
-  margin-top: 5px;
-}
-.footer .connect h6{
-  display: inline-block;
-}
-.footer .connect p{
-  font-size: 16px;
-  display: block;
-  margin: 40px auto;
-}
-
-.fa{
-  display: block;
-  color: #fff;
-  text-align: center;
-  letter-spacing: .3em;
-  padding-bottom: 10px;
-  font-size: 15px;
-}
-.footer .connect p:nth-child(4){
-  margin-bottom: 0;
-}
-}
-
 
 @media screen and (min-width:1024px){
-.footer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px;
-}
-footer .pic{
-  display: inline-block;
+  footer .footer{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* .footer div + div{
+    margin-top: 20px;
+  } */
+  .footer .pic{
+    padding:10px;
+    width:calc(100%/4 - 20px);
+    flex-direction: column;
+  } 
+  .footer .logo{
+    margin-top: 0;
+    width:100%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .footer .social{
+    width: 100%;
+  }
+  .footer .social i{
+    vertical-align: top;
+    color: white;
+    font-size: 35px;
+  }
+  
+  .footer .time{
+    padding:  10px;
+    width:calc(100%/4 - 20px);
+    display: inline-block;
+    text-align: left;
+    margin-top: 0;
+  }
+  .footer h6{
+    font-size: 16px;
+    line-height: 2;
+    color: #fff;
+  }
+  .footer span{
+    letter-spacing: 0.2em;
+  }
+  .footer p{
+    font-size: 16px;
+    line-height: 2;
+    color: #fff;
+  }
+  .footer .time div:nth-child(1){
+    display: block;
+    width: 100px;
+    margin: auto;
+  }
+  .footer .time div:nth-child(1) h6{
+    display: block;
+    margin-bottom: 20px;
+    
+  }
+  .footer .time h6, .footer .time p{
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .footer .time div:nth-child(2){
+    width: 100px;
+    margin: auto;
+    
+ }
+  .footer .time a{
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    font-size: 14px;
+    line-height: 2;
+    background-color: #fff;
+    border: 1px solid #00406C;
+    border-radius: 22px;
+  }
+  /* 地址跟電話的div */
+  .footer .AdrTel{
+    width:calc(100%/5 - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: 0;
+    width: auto;
 
-}
-/* logo */
-footer .logo{
-  /* width: 241px; */
-  width: 100%;
-}
-footer .logo img{
-  width: 100%;
-  vertical-align: top;
-  margin-top: -10px;
-}
-footer .social{
-  margin: 50px 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .social i{
-  width: 100%;
-  vertical-align: top;
-  color: white;
-  font-size: 40px;
-}
-.footer i:hover{
-  color: #00406C;
-  background-color: #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
+  }
+  .footer .adr{
+    padding:  10px;
+    margin-top: 0;
+  }
+  .footer .connect{
+    padding:  10px;
+    margin: auto;
+    margin-top: 0;
+  }
 }
 
-/* 參訪時間 */
-.footer h6{
-  margin: 0;
-  font-size: 20px;
-  display: inline-block;
-  color: #fff;
-}
-footer .delete{
-  background-color: #44D212;
-  visibility: hidden;
-}
-.footer p{
-  font-size: 16px;
-  display: block;
-  margin: 40px auto;
-}
-.footer .time a{
-  background-color: #fff;
-  border: 1px solid #00406C;
-  display: inline-block;
-  border-radius: 22px;
-  font-size: 16px;
-  padding: 5px 10px;
-}
-.footer .time a:hover{
-  background-color: #00406C;
-  border: 1px solid #00406C;
-  color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
-  border-radius: 22px;
-  padding: 5px 10px;
+@media screen and (min-width:1200px){
+  .footer .logo{
+    width:241px;
+  }
 }
 
-/* 聯絡方式 */
-
-.footer span{
-  display: inline-block;
-  letter-spacing: .3em;
-  margin-top: 5px;
-}
-.footer .connect h6{
-  display: inline-block;
-}
-.footer .connect p{
-  font-size: 16px;
-  display: block;
-  margin: 40px auto;
-}
-
-.fa{
-  display: block;
-  color: #fff;
-  text-align: center;
-  letter-spacing: .3em;
-  padding-bottom: 10px;
-  font-size: 16px;
-}
-.footer .connect p:nth-child(4){
-  margin-bottom: 0;
-}
-}

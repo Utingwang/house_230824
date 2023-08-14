@@ -4,188 +4,510 @@
 }
 h3{
   font-family: 'Permanent Marker', cursive;
-  font-size: 60px;
+  font-size: 50px;
   background-color: #fff;
   -webkit-text-stroke: 1px black;
-  color: #fff;
+  color: #44D212;
   margin: 20px;
+  text-align: center;
 }
-a{
-  color: black;
-  text-decoration: none;
+:root{
+  --column-count: 2;
 }
-.space{
-  height: 80px;
-  }
-main{
-    width: 1200px;
-    margin: auto;
 
+main{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
 }
 
 /* 服務對象 */
-.service_people{
-  background-image: url(pic/service/bg.png);
-  background-repeat:no-repeat;
-  width: 1200px;
-  height: 600px;
+h4{
+  font-size: 30px;
+  width: 83.3333%;
   margin: auto;
-  padding: 60px 0;
+  text-align: center;
+  color: #333;
 }
+.servicePeople{
+  background-color: #D9D9D9;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+  position: relative;
 
- .service_people div{
+}
+.servicePeople div:first-child{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-
 }
-
-.service_people .contain{
-  background-color: #fff;
-  width: 250px;
-  height: 250px;
+.servicePeople .contain{
+  margin-top: 10px;
+  margin: 10px;
+  --column-count: 2;
+  background-color: rgba(256,256,256);
+  /* W、h: 250px; */
+  width: calc(100%/var(--column-count) - 20px);
+  height: 0;
+  padding-bottom: calc(100%/var(--column-count) - 20px);
   border-radius: 50%;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.service_people p{
-  width: 180px;
+.servicePeople p{
+  width: 80%;
   line-height: 2;
-} 
-
-.service_people .title{
-   position: relative;
-}
-.service_people .title p{
-  width: 150px;
-  margin-left: 50%;
-  margin-top: 50px;
-  font-size: 24px;
-}
-.service_people .title p::after{
-  content: "";
-  border-top: 30px solid white;
-  border-right: 30px solid transparent;
-  border-left: 30px solid transparent;
   position: absolute;
-  top: 120%;
-  left: 72.5%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #00406C;
+} 
+.servicePeople .Mtitle{
+  font-weight: bolder;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.servicePeople .Mp{
+  display: none;
+  font: 12px;
+  line-height: 1;
 }
 
-/* 服務內容 */
-.service_activity{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.title h4{
+position: relative;
+display: block;
+text-align: center;
+}
+.title h4::after{
+content: "";
+border-top: 20px solid #333;
+border-right: 20px solid transparent;
+border-left: 20px solid transparent;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: -100%;
+}
 
+/* 服務 項目*/
+.service_activity{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+margin: auto;
 }
 .service_activity .card{
-    width: 258px;
+padding: 8px;
+width: calc(100%/var(--column-count));
 }
-.service_activity .card div:first-child img{
-    width: 100%;
-    vertical-align: top;
+.service_activity .pic img{
+width: 100%;
+vertical-align: top;
 }
-.service_activity .card div:nth-child(2){
+.service_activity .txt{
+text-align: center;
+position: relative;
+}
+.service_activity .txt h5{
+background-color: #44D212;
+color: #000;
+width: 70%;
+font-size: 16px;
+line-height: 1.5;
+border-radius: 22px;
+position: absolute;
+top: -15px;
+left: 0;
+right: 0;
+margin: auto;
+font-weight: bold;
 
+}
+.service_activity .card h5::after{
+content: '';
+display: block;
+border-bottom: 5px solid #44D212;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+position: absolute;
+width: 0;
+left: 0;
+right: 0;
+margin: auto;
+bottom: 100%;
+}
+
+.service_activity .card p{
+font-size: 14px;
+padding: 10px;
+line-height: 2;
+}
+.service_activity .txt img{
+display: none;
+}
+
+
+
+
+/* 客人心得  */
+.experience{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+.experience .txt{
+  background-color: #D9D9D9;
+  padding-top: 30px;
+}
+.experience .txt h4{
+  margin: auto;
   text-align: center;
   position: relative;
 }
-.service_activity .card h4{
-    background-color: #00406C;
-    color: #fff;
-    width: 100px;
-    line-height: 2;
-    border-radius: 22px;
-    position: absolute;
-    top: -15px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.service_activity .card p{
-  padding: 15px;
-  line-height: 2;
-}
-
-.service_activity .card p::after{
-  content: '';
-  display: block;
-  border-bottom: 15px solid #00406C;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  position: absolute;
-  width: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: -25px;
-}
-
-/* 客人心得 */
-.experience{
-  background-image: url(pic/service/bg\ _2.png);
-  background-repeat:no-repeat;
-  width: 1200px;
-  padding-top: 25px;
-}
-.experience div:first-child{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-.experience div:first-child div:first-child{
-  background-color: #fff;
-  width: 440px;
-  height: 195px;
-  border-radius: 100%;
-  margin-left: 175px;
-  position: relative;
-}
-.experience div:first-child div:first-child p{
-    display: inline-block;
-    width: 344px;
-    line-height: 32px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.experience div:first-child div:first-child span{
-  display: inline-block;
-  text-align: end;
-  width: 344px;
-}
-.experience .title{
-    position: relative;
-    left: 160px;
-}
-.experience .title p {
-  font-size: 24px;
-}
-.experience .title p::after{
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 20px solid #00406C;
-  border-left: 20px solid transparent;
+.experience .txt h4::after{
+  content: "";
+  border-top: 20px solid #333;
   border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
   position: absolute;
-  top: 140%;
+  bottom:-100%;
   left: 50%;
   transform: translateX(-50%);
 }
-.experience > div:nth-child(2){
-    font-size: 0;
+.experience .pic img{
+  display: none;
+  cursor: pointer;
 }
-.experience img{
-  display: inline-block;
-  width: 105px;
-  vertical-align: bottom;
-  margin-left: 0;
+#itemView{
+  top: 50px;
+  position: relative;
+  width: 60%;
+  background-color: #fff;
+  height: 200px;
+  margin: auto;  
+  overflow: hidden;  
+}
+.experience .txt p{
+  width: 100%;
+  padding: 10%;
+  line-height: 2;
+  font-size: 18px;
+  margin: auto;
+  position: absolute;
+}
+.experience .txt p:nth-child(1){
+  left: -100%;
+}
+.experience .txt p:nth-child(2){
+  left: 0;
+}
+.experience .txt p:nth-child(3){
+  left: 100%;
+}
+.experience .txt p:nth-child(4){
+  left: 200%;
+}
+.experience .txt p:nth-child(5){
+  left: 300%;
+}
+.experience .txt p:nth-child(6){
+  left: 400%;
+}
+#shiftPanel{
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#shiftPanel div{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2;
+  width: 30px;
+  border: 1px solid #00406C;
+  background-color: #00406C;
+  cursor: pointer;
+}
+.experience span{
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+#shiftPanel{
+  padding: 20px;
+}
+#btnLeft{
+  margin-right: 15px;
+}
+.fa-arrow-left{
+  color: #fff;
+  font-size: 20px;
+}
+.fa-arrow-right{
+  color: #fff;
+  font-size: 20px;
+}
+#btnRight{
+  margin-left: 15px;
+}
+
+@media screen and (min-width:350px){
+  .servicePeople .Mtitle{
+    font-weight: bolder;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  .servicePeople .Mp{
+    display: none;
+    font: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width:500px) {
+.servicePeople .contain{
+  --column-count: 3;
+  margin-top: 15px;
+  margin: 15px;
+  /* W、h: 250px; */
+  width: calc(100%/var(--column-count) - 30px);
+  padding-bottom: calc(100%/var(--column-count) - 30px);
+}
+
+
+/* 心得 */
+.service_activity .txt h5{
+  width: 50%;
   font-size: 16px;
+  line-height: 2;
 }
-.experience img + img{
-    margin-left: 114px;
+.service_activity .card h5::after{
+  border-bottom: 5px solid #44D212;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+}
+.service_activity .card p{
+  font-size: 14px;
+  padding: 28px;
+  line-height: 2;
+  text-align: left;
+}
 } 
+@media screen and (min-width:768px) {
+  .servicePeople .contain{
+      --column-count: 4;
+      margin-top: 20px;
+      margin: 20px;
+      width: calc(100%/var(--column-count) - 40px);
+      padding-bottom: calc(100%/var(--column-count) - 40px);
+    }
+    .servicePeople .Mtitle{
+      font-size: 24px;
+    }
+    .servicePeople .Mp{
+      display: none;
+      font-size: 19px;
+    }
+/* 活動 */
+
+  .service_activity .card{
+    --column-count:3;
+  }
+  .service_activity .txt img{
+    position: absolute;
+    display: none
+  }
+}
+
+@media screen and (min-width:1024px) {
+.servicePeople{
+    background-color: rgba(256, 256, 256, 0);
+    background-image: url(pic/service/bg3.png);
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+.servicePeople .contain{
+  margin-top: 10px;
+  margin: 10px;
+  width: calc(100%/var(--column-count) - 20px);
+  height: 0;
+  padding-bottom: calc(100%/var(--column-count) - 20px);
+  --column-count: 6;
+}
+.service_activity .txt{
+  position: relative;
+}
+.servicePeople p:first-child{
+  font-size: 22px;
+
+}
+.service_activity .txt img{
+  display: inline-block;
+  position: absolute;
+}
+.icon1{
+  top: 10px;
+  left:-135%;
+}
+.icon2{
+  top: -40px;
+  left:-90px;
+}
+.icon3{
+  top: -250%;
+  right: -20%;
+}
+.icon4{
+  top: -160%;
+  right: -30%;
+}
+
+
+.title h4{
+  left: -15%;
+  margin-top: 2%;
+}
+.title h4::after{
+  left:50%;
+  transform: translateX(-50%);
+}
+
+
+/* 服務項目 */
+.service_activity .card{
+  --column-count:4;
+}
+.service_activity{
+  width: 85%;
+}
+
+.service_activity .card{
+  padding: 15px;
+}
+.service_activity .txt h5{
+  width: 50%;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.service_activity .card h5::after{
+  border-bottom: 5px solid #44D212;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+}
+.service_activity .card p{
+  font-size: 14px;
+  padding: 30px 18px;
+  line-height: 2;
+  text-align: left;
+}
+
+/* 客人心得  */
+.experience{
+  width: 100%;
+  background-image: url(pic/service/bg\ _2.png);
+  background-repeat: no-repeat;
+  height: 355px;
+}
+.experience .txt{
+    background-color: rgba(256,256,256,0);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+}
+#itemView{
+  width: 400px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left:17%;
+  margin-top: 10px;
+}
+#shiftPanel{
+  display: none;
+}
+.experience .txt h4{
+  width:300px;
+  text-align: center;
+  position: relative;
+  left: -180px;
+}
+#itemView{
+  top: 0;
+}
+.experience .txt p:nth-child(1){
+  left: 0;
+  opacity: 1;
+}
+.experience .txt p:nth-child(2){
+  left: 0;
+  opacity: 0;
+}
+.experience .txt p:nth-child(3){
+  left: 0;
+  opacity: 0;
+}
+.experience .txt p:nth-child(4){
+  left: 0;
+  opacity: 0;
+}
+.experience .txt p:nth-child(5){
+  left: 0;
+  opacity: 0;
+}
+.experience .txt p:nth-child(6){
+  left: 0;
+  opacity: 0;
+}
+.experience .pic{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.experience .pic img{
+  display: inline-block;
+  width: 110px;
+}
+}
+@media screen and (min-width:1200px) {
+  .service_activity{
+    width: 95%;
+  }
+  .servicePeople .contain{
+    cursor: pointer;
+    margin-top: 15px;
+    margin: 15px;
+    width: calc(100%/var(--column-count) - 30px);
+    padding-bottom: calc(100%/var(--column-count) - 30px);
+  }
+  .servicePeople .contain:hover .Mtitle{
+    display: none;
+  }
+  .servicePeople .contain:hover .Mp{
+    display: block;
+  }
+  .service_activity .card{
+    padding: 20px;
+    width: calc(100%/var(--column-count));
+    }
+  .service_activity .txt h5{
+    width: 50%;
+    font-size: 20px;
+    line-height: 2;
+  } 
+  .service_activity .card p{
+    font-size: 16px;
+    line-height: 2;
+
+  }
+}

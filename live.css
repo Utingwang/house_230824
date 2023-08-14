@@ -1,161 +1,282 @@
-.space{
-  height: 80px;
-  width: 1280px;
-  color: white;
-}
-/* title區 */
-.title{
-  width: 1200px;
-  margin: auto;
-  position: relative;
-  height: 100px;
-  left: 80px;
-}
-.title h2{
-  position: absolute;
-  left: 1.7%;
-  top: 30%;
-  font-size: 24px;
-  font-weight: bolder;
-  color: #fff;
-}
-.title img{
-  width: 130px;
-  height: 70px;
-}
 
-/* 流程區 */
+*{
+  font-family: "Noto Sans Tc";
+  box-sizing: border-box;
+}
 main{
-  width: 1200px;
+  padding: 50px 0;
+  max-width: 1200px;
+  width: 100%;
   margin: auto;
-  /* background-color: aqua; */
 }
-
-main section{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin: 50px;
-}
-main section > div{
+section .step{
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  /* background-color: #fa0; */
-}
-section .txt{
-  width: 500px;
-  height: 150px;
-  background-color: #fff;
-  border-top: 5px solid antiquewhite;
-  border-bottom: 5px solid antiquewhite;
-  position: relative;
-  left: 47px;
-  line-height: 32px;
-  display: flex;
-  align-items: center;
-
-
-}
-section .outside{
-  width: 130px;
-  height: 130px;
-  border: 5px solid antiquewhite;
-  padding: 20px; 
-  transform: rotate(45deg);
-  margin-right: 10px;
-
- }
- main .outside::after{
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 80px solid antiquewhite;
-  border-left: 80px solid transparent;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-} 
-section .square{
-  width: 80px;
-  height: 80px;
-  background-color: antiquewhite;
-  box-shadow: 0px 0px 0px 2px white;
-  position: relative;
-  z-index: 1;
-}
-section .square span{
-  display: block;
-  position: absolute;
-  width: 36px;
-  height: 16px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-direction: column-reverse;
   margin: auto;
-  transform: rotate(-45deg);
 }
-
-section img{
-  display: block; 
-  width: 130px;
-  text-align: center;
-}
-main section:nth-child(even){
-  flex-direction: row-reverse;
-}
-main section:nth-child(even) > div{
-  flex-direction: row-reverse;
-}
-main section:nth-child(even) .outside{
-  margin-left: 30px;
-  margin-right: 0;
-}
-main section:nth-child(even) .txt{
-  left: -47px;
-  justify-content: flex-end;
-}
-
-main section:nth-child(2) .txt{
-  border-top: 5px solid #afe;
-  border-bottom: 5px solid #aef;
-}
-main section:nth-child(2) img{
-  width: 150px;
-}
-
-main section:nth-child(3) img{
-  width: 110px;
-}
-main section:nth-child(2) .square{
-  background-color: #afe;
-}
-main section:nth-child(2) .outside{
-  border: 5px solid #afe;
-}
-main section:nth-child(2) .outside::after{
-  border-top: 80px solid #afe;
+.step .borderColor{
+  width: 100%;
   
 }
+.step .borderColor p{
+  padding: 20px 0;
+  font-size: 16px;
+  text-align: 2;
+}
+.step .borderColor a{
+  font-weight: bolder;
+  color: red;
+}
+.step .outside{
+  display: none;
+  /* width: 16%;
+  background-color: blanchedalmond;
+  border-top: 10px solid #f00;
+  border-bottom: 10px solid #f00;
+  border-image: linear-gradient(
+  to right,
+  transparent 0%, 
+  transparent 50%,
+  #f00 50%,
+  #f00 100%) 1 0 stretch;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; */
+}
+/* .step .square{
+  width: 100%;
+  position: relative;
+  background-color: #f00;
+  box-shadow: 0px 0px 0px 2px white;
+  transform: rotate(45deg); 
+}
+/* .step .square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.step .square > i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-main section:nth-child(4) .txt{
-  border-top: 5px solid #aef;
-  border-bottom: 5px solid #aef;
+} */
+/* step+icon */
+
+.step .title{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-main section:nth-child(4) .img{
-  width: 150px;
+.step .title .txt{
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 20px;
+  text-align: left;
+  color: #44D212;
 }
-main section:nth-child(4) .square{
-  background-color: #aef;
+.step .title .txt div:nth-child(1){
+  width: 100%;
 }
-main section:nth-child(4) .outside{
-  border: 5px solid #aef;
+.step .title .txt div:nth-child(2){
+  width: 100%;
+  font-size: 40px;
+  font-family: "Noto Sans Tc";
 }
-main section:nth-child(4) .outside::after{
-  border-top: 80px solid #aef;
-  
+.step .title .txt h4{
+ font-family: "Noto Sans Tc"; 
+}
+.step .title img{
+  width: 100px;
 }
 
+
+@media screen and (min-width:768px) {
+  .step + .step{
+    margin-top:10px;
+  }
+  section .step:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  section .step{
+    flex-direction: row;
+  }
+
+  .step .borderColor{
+    width: 42%;
+    border-top: 2px solid #44D212;
+    border-bottom: 2px solid #44D212;
+    display: flex;
+    align-items: center;
+  }
+  .step:nth-child(even) .borderColor{
+    border-top: 2px solid #E6bc94;
+    border-bottom: 2px solid #E6bc94;
+  }
+  .step:nth-child(odd) .borderColor{
+    width: 36%;
+    /* background-color: #f0f; */
+  }
+  .step:nth-child(odd) .title{
+    width: 48%;
+    /* background-color: aqua; */
+  }
+  .step:nth-child(even) .borderColor{
+    width: 38%;
+    /* background-color: antiquewhite; */
+  }
+  .step:nth-child(even) .title{
+    width: 46%;
+    /* background-color: aquamarine; */
+  }
+  .step p{
+    width: 90%;
+    margin-left: 0;
+    font-size: 10px;
+  }
+  section .step:nth-child(even) p{
+    margin-right: 0;
+    margin-left: auto;
+  }
+  section .step:nth-child(3) p{
+    padding: 5px 0;
+
+  }
+  .step .outside{
+    width: 16%;
+    border-top: 2px solid #44D212;
+    border-bottom: 2px solid #44D212;
+    border-image: linear-gradient(
+    to right,
+    #44d212 0%, 
+    #44d212 50%,
+    transparent 50%,
+    transparent 100%) 1 0 stretch;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  section .step:nth-child(even) .outside{
+    border-image: linear-gradient(
+    to right,
+    transparent 0%, 
+    transparent 50%,
+    #E6bc94 100%) 1 0 stretch;
+  }
+  .step .square{
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #44D212;
+    box-shadow: 0px 0px 0px 2px white;
+    transform: rotate(45deg);
+  }
+  .step .even{
+    border: 2px solid #E6bc94;
+  }
+  .step .square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .step .odd::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 80px solid #2e8110;
+    border-left: 80px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .step .even::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid #D3A174;
+    border-right: 80px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .step .square div{
+      background-color: #44D212;
+      border: 3px solid #fff;
+      position: absolute;
+      width: 70%;
+      height: 70%;
+      inset: 0;
+      margin: auto;
+  }
+  .step:nth-child(even) .square div{
+    background-color: #E6bc94;
+  }
+  .step .square i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+  }
+  /* title+icon */
+  .step .title{
+    width: 42%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .step:nth-child(even) .title{
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .step .title .txt{
+    width: 70%;
+  }
+  .step:nth-child(even) .title .txt{
+    color: #D3A174;
+  }
+ 
+  .step .title .txt div:nth-child(2){
+    text-align: center;
+  }
+  .step .title .txt h4{
+    text-align: right;
+  }
+  .step .title img{
+    width: 80px;
+  }
+}
+
+
+@media screen and (min-width:1024px) {
+  .step p{
+    font-size: 16px;
+    line-height: 2;
+  }
+  .step .square i{
+    font-size: 35px;
+  }
+  .step .title .txt div:nth-child(1){
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .step .title .txt h4{
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .step .title img{
+    width: 100px;
+  }
+}
