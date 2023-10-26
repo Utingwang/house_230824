@@ -1,6 +1,9 @@
+＠font-face{
+  font-family: "Iansui-Regular","YujiBoku-Regular","Noto Sans Tc";
+}
 *{
   box-sizing: border-box;
-  font-family: "Noto Sans Tc";
+  font-family: "Iansui-Regular","YujiBoku-Regular","Noto Sans Tc";
 }
 a{
   color: black;
